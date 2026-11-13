@@ -1,0 +1,57 @@
+project:
+  name: tobacco_chemistry_prediction
+  task: wind_enhanced_tobacco_chemical_prediction
+  seed: 42
+
+data:
+  growth_start: "05-01"
+  growth_end: "09-30"
+  sequence_length: 153
+
+inputs:
+  original6:
+    - Tmax
+    - Tmin
+    - Tavg
+    - Rain
+    - Sunshine
+    - Pressure
+
+  wind6:
+    - Tmax
+    - Tmin
+    - Rain
+    - Sunshine
+    - Pressure
+    - Wind
+
+  wind7:
+    - Tmax
+    - Tmin
+    - Tavg
+    - Rain
+    - Sunshine
+    - Pressure
+    - Wind
+
+targets:
+  - total_sugar
+  - reducing_sugar
+  - nicotine
+  - total_nitrogen
+  - potassium
+
+split:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_state: 42
+
+weather_valid_range:
+  Tmax: [-10, 45]
+  Tmin: [-20, 35]
+  Tavg: [-20, 40]
+  Rain: [0, 1000]
+  Sunshine: [0, 24]
+  Pressure: [500, 1100]
+  Wind: [0, 40]

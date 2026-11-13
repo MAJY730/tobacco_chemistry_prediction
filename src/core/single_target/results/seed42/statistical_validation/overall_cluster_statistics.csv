@@ -1,0 +1,2 @@
+﻿delta_mape_pp,n_records,n_county_year_clusters,permutation_p_raw,bootstrap_ci95_low_pp,bootstrap_ci95_high_pp,bootstrap_ci_crosses_zero,group_t_statistic,group_t_p_raw,group_wilcoxon_statistic,group_wilcoxon_p_raw,analysis
+0.3211162709715896,420,149,0.04668953310466895,0.011926288298729614,0.6375457442733871,False,1.5251484138853892,0.1293561845108004,4911.0,0.19983121555212624,overall_mean_of_five_targets
